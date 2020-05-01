@@ -1,13 +1,14 @@
 {
-  "name": "NamsteGurus",
-  "version": "2.0.0",
+  "name": "NamasteGurus",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -35,8 +36,10 @@
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
+    "npm":"6.13.4",
+    "node":"12.14.1",
     "@angular-devkit/build-angular": "~0.901.0",
-    "@angular/cli": "^9.1.4",
+    "@angular/cli": "^9.1.0",
     "@angular/compiler-cli": "^9.1.0",
     "@angular/language-service": "^9.1.0",
     "@types/jasmine": "~3.5.10",
