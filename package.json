@@ -8,12 +8,14 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^9.1.0",
     "@angular/common": "^9.1.0",
+        "@angular/cli": "^9.1.4",
+    "@angular/compiler-cli": "^9.1.0",
     "@angular/compiler": "^9.1.0",
     "@angular/core": "^9.1.0",
     "@angular/forms": "^9.1.0",
@@ -39,8 +41,6 @@
     "npm":"6.13.4",
     "node":"12.14.1",
     "@angular-devkit/build-angular": "~0.901.0",
-    "@angular/cli": "^9.1.4",
-    "@angular/compiler-cli": "^9.1.0",
     "@angular/language-service": "^9.1.0",
     "@types/jasmine": "~3.5.10",
     "@types/jasminewd2": "~2.0.8",
